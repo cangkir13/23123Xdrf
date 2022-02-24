@@ -8,9 +8,13 @@ const userRoutes = {
 		middlewares: [validate(schemas.tracking)],
 	 },
 
-	'POST /webhookninja': 'Webhook_ninja.index' 
+	'POST /webhookninja': 'Webhook_ninja.index' ,
 
 
+	'GET /:awb' :  {
+		path: 'API.findresi',
+		middlewares: [validate(schemas.tracking)],
+	 },
 };
 
 module.exports = userRoutes;

@@ -7,7 +7,8 @@ const Kurir_dc_history = sequelize.define('kurir_dc_history', {
   
   id: {
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   id_order: {
     type: Sequelize.INTEGER,

@@ -46,10 +46,4 @@ const kmart_awb = sequelize.define('kmart_awb', {
 }, {  tbl, timestamps:false, freezeTableName:true });
 
 
-kmart_awb.belongsTo(trackingsend, {
-  foreignKey:'awb',
-  as:'idOrder',
-  targetKey:'awb'
-})
-
 module.exports = kmart_awb;

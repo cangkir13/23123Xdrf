@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "npm run nodemon",
-    "dev": "cross-env NODE_ENV=development pm2 start ./api/api.js --watch --name tracking",
+    "dev": "cross-env NODE_ENV=development nodemon ./api/api.js",
     "nodemon": "nodemon --exec npm run dev",
     "production": "cross-env NODE_ENV=production node ./api/api.js"
   },

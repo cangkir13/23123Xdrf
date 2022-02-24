@@ -1,7 +1,8 @@
 const userRoutes = require('./routes/userRoutes');
 const KlinkRoute = require('./routes/KlinkRoute');
+require('dotenv').config()
 const config = {
-  migrate: true,
+  migrate: process.env.MIGRATE,
   userRoutes,
   KlinkRoute,
   port: process.env.PORT || '3030',

@@ -96,9 +96,30 @@ const API = () => {
       
   };
 
+  const findresi = async(req, res) => {
+    const {ekspedisi, awb} = req.body
+
+    try {
+      var data_return = ''
+
+      if(modulTracking[ekspedisi] !== undefined){
+        data_return = await modulTracking[ekspedisi](awb)
+        return res.json(data_return)
+      }else {
+        return res.status(400).json({status:false,note:"Courier Not available"});
+      }
+
+    } catch (error) {
+      return res.status(500).json({
+        status: false,
+        note: "error server"
+      })
+    }
+  }
+
   return {
     index,
-  
+    findresi
   };
 
 

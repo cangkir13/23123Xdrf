@@ -5,7 +5,7 @@ const tbl = 'Transaksi_send';
 
 const Transaksi_send = sequelize.define('tracking_send', {
   
-    id_tracking: {
+  id_tracking: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     primaryKey: true

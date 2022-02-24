@@ -6,7 +6,8 @@ const tbl = 'klink_member_alamat_verify';
 const Member = sequelize.define('klink_member_alamat_verify', {
   id:{
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   id_member: {
     type: Sequelize.STRING,

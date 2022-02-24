@@ -6,7 +6,8 @@ const tbl = 'Klink_warehouse_master';
 const Warehouse = sequelize.define('klink_warehouse_master', {
   id:{
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   whcd: {
     type: Sequelize.STRING,

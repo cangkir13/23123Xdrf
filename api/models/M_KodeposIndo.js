@@ -7,7 +7,8 @@ const KodeposIndo = sequelize.define('kode_pos', {
   
   id: {
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   province: {
     type: Sequelize.STRING,

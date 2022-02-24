@@ -7,7 +7,8 @@ const Kurir_jnt = sequelize.define('kurir_jnt', {
   
   id: {
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   PROVINSI: {
     type: Sequelize.STRING,

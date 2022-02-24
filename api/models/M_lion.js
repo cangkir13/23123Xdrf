@@ -8,6 +8,7 @@ const Kurir_lion = sequelize.define('lion_dest_3', {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
+    autoIncrement: true,
   },
   kode: {
     type: Sequelize.STRING,

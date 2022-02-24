@@ -7,7 +7,8 @@ const Kurir_sap = sequelize.define('kurir_sap_13apr20_new_2', {
   
   No: {
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   provinsi: {
     type: Sequelize.STRING,

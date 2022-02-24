@@ -7,7 +7,8 @@ const Kurir_jne = sequelize.define('kurir_jne_30012020', {
   
   id: {
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   provinsi: {
     type: Sequelize.STRING,
